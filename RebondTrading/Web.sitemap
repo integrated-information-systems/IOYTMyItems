@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode  url="default.aspx" title="Home" roles="*"  description="Home">
+    <siteMapNode url="" title="Site Management" roles="admin" description="Admin controls">
+      <siteMapNode url="" title="Manage Users"  roles="admin"     description="Users" >
+        <siteMapNode url="~/Account/Register.aspx" title="Add User"  roles="admin"     description="Add User" />
+        <siteMapNode url="~/Account/ManageUsers.aspx"  title="Manage Users" roles="admin" description="Manager Users" />
+      </siteMapNode>
+      <siteMapNode url="" title="Manage Roles"  roles="admin"     description="Roles" >
+        <siteMapNode url="~/Account/ManageRoles.aspx" title="Manage Roles"  roles="admin"      description="Manage Roles" />
+        <siteMapNode url="~/Account/AssignRoles.aspx"  title="Assign Roles" roles="admin" description="Assign Roles" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="Masters"  roles="admin, normal-user "     description="Masters" >
+      <siteMapNode url="~/Business/ItmCategoryMaster.aspx" title="Item Category Master"  roles="admin, normal-user "      description="Item Category Master" />
+      <siteMapNode url="~/Business/SkuMaster.aspx" title="Item Master"  roles="admin, normal-user "      description="Item Master" />
+      <siteMapNode url="~/Business/LocMaster.aspx" title="Location Master"  roles="admin, normal-user "      description="Location Master" />
+      <siteMapNode url="~/Business/CustMaster.aspx" title="Customer Master"  roles="admin, normal-user "      description="Customer Master" />
+      <siteMapNode url="~/Business/SupMaster.aspx" title="Supplier Master"  roles="admin, normal-user "      description="Supplier Master" />
+    </siteMapNode>
+    <siteMapNode url="~/Business/GoodsReceipt.aspx"  title="Item Receipt" roles="admin, normal-user "  description="Item Receipt" />
+    <siteMapNode url="~/Business/GoodsIssue.aspx"  title="Item Issue" roles="admin, normal-user "  description="Item Issue" />
+ 
+    <siteMapNode url="" title="Reports"  roles="admin, normal-user "      description="Reports" >
+      <siteMapNode url="~/Business/StockMovementReport.aspx" title="Item Movement Report"  roles="admin, normal-user "       description="Stock Movement Report" />
+      <siteMapNode url="~/Business/StockMovementSummaryReport.aspx" title="Item Balance Report"  roles="admin, normal-user "       description="Item Balance Report" />
+      <siteMapNode url="~/Business/StockMovementByBatchReport.aspx" title="Item Movement By Batch Report"  roles="admin, normal-user "       description="Stock Movement Report" />
+      <siteMapNode url="~/Business/StockMovementSummaryByBatchReport.aspx" title="Item Balance By Batch Report"  roles="admin, normal-user "       description="Item Balance Report" />
+    </siteMapNode>
+    <siteMapNode url="~/Account/ChangePassword.aspx"  title="Change Password" roles="admin, normal-user "  description="Change Password" />
+    <!--<siteMapNode url="" title="Listing"  roles="admin, normal-user "      description="Roles" >
+      <siteMapNode url="~/Business/QuotationList.aspx" title="Quotation Listing"  roles="admin, normal-user "       description="Quotation" />
+      <siteMapNode url="~/Business/InvoiceListing.aspx"  title="Invoice Listing" roles="admin, normal-user "  description="Invoice" />
+    </siteMapNode>-->
+  </siteMapNode>
+  
+</siteMap>

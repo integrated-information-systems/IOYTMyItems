@@ -1,0 +1,672 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+#ItemCodeAutoCompleteAddContainer
+
+    {
+
+         max-height: 150px;
+
+        overflow-x: hidden;
+
+        overflow-y: auto;
+
+    }
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+   /* font-variant: small-caps; */
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+.full-caps 
+{
+   font-variant: small-caps; 
+}
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+h3.LocationHeader
+{
+    font-size:13px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 99%;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #004354;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#ffb600;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    min-width: 144px;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 2em;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label, fieldset.assignRoles label
+{
+    display: block;
+   
+}
+fieldset.assignRoles li label 
+{
+    display:inline;
+}
+fieldset.assignRoles ul
+{
+    list-style-type: none;
+}
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+input.textBigEntry 
+{
+    width: 620px;
+    border: 1px solid #ccc;
+}
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+input.textDecimalEntry 
+{
+    width: 60px;
+    border: 1px solid #ccc;
+}
+input.textHeaderDecimalEntry 
+{
+    width: 80px;
+    border: 1px solid #ccc;
+}
+input.textPercentEntry
+{
+    width: 50px;
+    border: 1px solid #ccc;
+}
+input.textQtyEntry 
+{
+    width: 50px;
+    border: 1px solid #ccc;
+}
+input.textUOMEntry 
+{
+    width: 50px;
+    border: 1px solid #ccc;
+}
+input.textEntry200 
+{
+    width: 200px;
+    border: 1px solid #ccc;
+}
+input.textEntry300 
+{
+    width: 300px;
+    border: 1px solid #ccc;
+}
+input.textDateEntry 
+{
+    width: 80px;
+    border: 1px solid #ccc;
+}
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+.SuccessMsg 
+{
+    color:Green;
+}
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+.clear2
+{
+    clear: both;
+}
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+.modalPopup
+{
+    background: #eee url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") repeat-x scroll 50% top;
+    border: 1px solid #e78f08;
+    color: #fff;
+    font-weight: bold;
+}
+.popupheader
+{
+    background: #f6a828 url("images/ui-bg_gloss-wave_35_f6a828_500x100.png") repeat-x scroll 50% 50%;
+    border: 1px solid #e78f08;
+    color: #fff;
+    font-weight: bold
+}
+.popcontent
+{
+    background: #eee url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") repeat-x scroll 50% top;
+    border: 1px solid #ddd;
+    color: #333;
+}
+/****** Custom Style  Added ******/
+.MainContent 
+{
+    border: 1px solid #ccc;
+    margin:10px auto 0;
+    min-height:400px;
+    width:100%
+}
+.FormHeader 
+{    
+    margin:10px auto 0;  
+    width:100%;
+    overflow: hidden;
+}
+.GridViewItems 
+{    
+    margin:10px auto 0;  
+    width:100%;   
+}
+.GridViewItems table tr td
+{    
+    vertical-align: top; 
+}
+.GridViewItemsScroll
+{
+     margin:10px auto 0;  
+    width:100%;    
+     overflow-x: scroll; 
+}
+.GridViewItemsScroll table tr td
+{    
+    vertical-align: top; 
+}
+.FormHeader .twocolleft
+{
+    /* border: 1px solid #ccc; */
+    float:left;
+    width:65%
+}
+.FormHeader .twocolleft75
+{
+    /* border: 1px solid #ccc; */
+    float:left;
+    width:75%
+} 
+.FormHeader .twocolleft70
+{
+    /* border: 1px solid #ccc; */
+    float:left;
+    width:70%
+} 
+.FormHeader .twocolright
+{
+  /* border: 1px solid #ccc; */
+    float:right;
+    width:30%
+}
+.FormHeader .twocolleft60
+{
+    /* border: 1px solid #ccc; */
+    float:left;
+    width:60%
+}
+.FormHeader .twocolleft30
+{
+  /* border: 1px solid #ccc; */
+    float:left;
+    width:30%
+}
+.FormHeader .twocolleft35
+{
+  /* border: 1px solid #ccc; */
+    float:left;
+    width:35%
+}
+.FormHeader .twocolright20
+{
+  /* border: 1px solid #ccc; */
+    float:right;
+    width:20%
+}
+.FormHeader .twocolright25
+{
+  /* border: 1px solid #ccc; */
+    float:right;
+    width:25%
+}
+.FormHeader .twocolright35
+{
+  /* border: 1px solid #ccc; */
+    float:right;
+    width:35%
+}
+.FormHeader .twocolleft50
+{
+    /* border: 1px solid #ccc; */
+    float:left;
+    width:45%
+}
+.FormHeader .twocolright50
+{
+  /* border: 1px solid #ccc; */
+    float:right;
+    width:45%
+}
+
+.FormHeader .twocolleft50exact
+{
+  /* border: 1px solid #ccc; */
+    float:left;
+    width:50%
+}
+.FormHeader .twocolright50exact
+{
+  /* border: 1px solid #ccc; */
+    float:right;
+    width:50%
+}
+.FormHeader .twocolleft25
+{
+    /* border: 1px solid #ccc; */
+    float:left;
+    width:25%
+}
+.FormHeader .twocolright70
+{
+  /* border: 1px solid #ccc; */
+    float:right;
+    width:70%
+}
+/******** Table using div - starts here ********/
+.Table
+    {
+        display: table;
+        padding: 10px 10px 10px 10px;
+    }
+    .Title
+    {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+    }
+    .Row
+    {
+        display: table-row;
+       
+    }
+    .Cell
+    {
+        display: table-cell;     
+        vertical-align:top;  
+        padding: 8px 10px 8px 10px;
+     
+    }
+    input[type=text] 
+    {
+         border: 1px solid #ccc;
+    }
+    input[type=checkbox] 
+    {
+         border: 1px solid #ccc;
+    }
+    
+    select 
+    {
+        border: 1px solid #ccc;
+    }
+    .GridSelectBoxWhs
+    {
+        width:115px;
+    }
+    .HeaderSelectBox
+    {
+         width: 325px;
+    }
+    .NoResize
+    {
+        resize:none;
+    }
+    .SerialNo 
+    {
+        width:100px;
+    }
+    .InvoiceNo
+    {
+        width:100px;
+    }
+    div[id$="CompleteContainer"]    
+    {
+         max-height: 100px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+ /********** Table using div - ends here ********/
+      
+  .ItemGrid 
+  {
+     width: 95%;
+  }
+  .DocNumberGrid
+  {
+      width: 50%; 
+      margin: 10px 25px;
+  }
+  .StockStatusGrid
+  {
+      width: 95%; 
+      margin: 10px 25px;
+  }
+  .DocNumberGrid_Buttons
+  {
+      width:50%;
+      text-align:right;
+      margin: 10px 25px;
+  }
+  .DocNumberGrid_Buttons input[type="submit"], button, .button, a.actionlink {    
+    min-width: 85px;   
+    margin-left:20px;
+  }
+  .FixedWidthMultilineTexBox 
+  {
+      overflow:auto;
+   
+  }
+  .QtyEntry 
+  {
+    width:35px;
+  }
+   .UOMEntry 
+  {
+    width:45px;
+  }
+  .FixedWithLabel140
+  {
+    display:block;
+    width:140px;
+  } 
+  .FixedWithLabel100
+  {
+    display:block;
+    width:100px;
+  } 
+  .FixedWithLabel50
+  {
+    display:block;
+    width:50px;
+  } 
+  .Small-Heading 
+  {
+      font-size:1.2em;
+  } 
+  .Action-Button
+  {
+      min-width:100px;
+      margin-left:10px;
+      margin-right:10px;
+  }
+.Action-Button-small {
+    min-width: 85px;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+   
+    div[id*="ValidationSummary"] {
+    color: red;
+    font-size:1.2em;
+   } 
+   Span[id*="Validator"] {
+    color: red;   
+   } 
+  /* Jquery Dialog custom css */
+  .no-close .ui-dialog-titlebar-close {
+display: none;
+}

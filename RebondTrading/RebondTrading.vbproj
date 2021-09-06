@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D4796D67-0D9F-4C93-9362-7C8FABE9F380}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RebondTrading</RootNamespace>
+    <AssemblyName>RebondTrading</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RebondTrading.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RebondTrading.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>G:\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <HintPath>..\..\..\..\.Net Tools\FTBv3-3-1\Framework-4-0\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.11.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.11\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\AssignRoles.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\ManageRoles.aspx" />
+    <Content Include="Account\ManageUsers.aspx" />
+    <Content Include="Account\PasswordRecoveryMailContent.html" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Business\CustMaster.aspx" />
+    <Content Include="Business\GoodsIssue.aspx" />
+    <Content Include="Business\GoodsReceipt.aspx" />
+    <Content Include="Business\ItmCategoryMaster.aspx" />
+    <Content Include="Business\LoadImage.aspx" />
+    <Content Include="Business\LocMaster.aspx" />
+    <Content Include="Business\SkuMaster.aspx" />
+    <Content Include="Business\StockMovementByBatchReport.aspx" />
+    <Content Include="Business\StockMovementReport.aspx" />
+    <Content Include="Business\StockMovementSummaryByBatchReport.aspx" />
+    <Content Include="Business\StockMovementSummaryReport.aspx" />
+    <Content Include="Business\SupMaster.aspx" />
+    <Content Include="Scripts\CommonJScript.js" />
+    <Content Include="Scripts\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\jQueryUI\jquery-ui.min.js" />
+    <Content Include="Styles\JQueryUI\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Styles\JQueryUI\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Styles\JQueryUI\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Styles\JQueryUI\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Styles\JQueryUI\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Styles\JQueryUI\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\JQueryUI\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Styles\JQueryUI\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Styles\JQueryUI\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Styles\JQueryUI\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\JQueryUI\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Styles\JQueryUI\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Styles\JQueryUI\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Styles\JQueryUI\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\JQueryUI\jquery-ui.min.css" />
+    <Content Include="Styles\JQueryUI\jquery-ui.structure.min.css" />
+    <Content Include="Styles\JQueryUI\jquery-ui.theme.min.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Uploadedfiles\NoImg.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebServices\Wss.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\AssignRoles.aspx.designer.vb">
+      <DependentUpon>AssignRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AssignRoles.aspx.vb">
+      <DependentUpon>AssignRoles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.vb">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.vb">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageRoles.aspx.designer.vb">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageRoles.aspx.vb">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageUsers.aspx.designer.vb">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageUsers.aspx.vb">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\DB\AppSpecificFunc.vb" />
+    <Compile Include="App_Code\DB\CommonFunc.vb" />
+    <Compile Include="App_Code\DB\ComplexCustomUpdateQuery.vb" />
+    <Compile Include="App_Code\DB\ComplexDeleteQuery.vb" />
+    <Compile Include="App_Code\DB\ComplexInsertQuery.vb" />
+    <Compile Include="App_Code\DB\ComplexSelectJoinQuery.vb" />
+    <Compile Include="App_Code\DB\ComplexSelectQuery.vb" />
+    <Compile Include="App_Code\DB\CURD.vb" />
+    <Compile Include="App_Code\DB\CustomQuery.vb" />
+    <Compile Include="App_Code\DB\DeleteQuery.vb" />
+    <Compile Include="App_Code\DB\JoinObj.vb" />
+    <Compile Include="App_Code\DB\SelectQuery.vb" />
+    <Compile Include="App_Code\DB\UpdateQuery.vb" />
+    <Compile Include="App_Code\Enums\DocStatus.vb" />
+    <Compile Include="App_Code\MobTables\MobCustomer.vb" />
+    <Compile Include="App_Code\MobTables\MobGR.vb" />
+    <Compile Include="App_Code\MobTables\MobItem.vb" />
+    <Compile Include="App_Code\MobTables\MobLocation.vb" />
+    <Compile Include="App_Code\MobTables\MobLogin.vb" />
+    <Compile Include="App_Code\MobTables\MobVendor.vb" />
+    <Compile Include="App_Code\MobTables\PostResults.vb" />
+    <Compile Include="App_Code\Tables\CustomerMaster.vb" />
+    <Compile Include="App_Code\Tables\ErrorLog.vb" />
+    <Compile Include="App_Code\Tables\GoodsIssueItems.vb" />
+    <Compile Include="App_Code\Tables\GoodsReceiptItems.vb" />
+    <Compile Include="App_Code\Tables\ItemCategoryMaster.vb" />
+    <Compile Include="App_Code\Tables\ItemMaster.vb" />
+    <Compile Include="App_Code\Tables\LocationMaster.vb" />
+    <Compile Include="App_Code\Tables\StockMovement.vb" />
+    <Compile Include="App_Code\Tables\SupplierMaster.vb" />
+    <Compile Include="Business\CustMaster.aspx.designer.vb">
+      <DependentUpon>CustMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\CustMaster.aspx.vb">
+      <DependentUpon>CustMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\GoodsIssue.aspx.designer.vb">
+      <DependentUpon>GoodsIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\GoodsIssue.aspx.vb">
+      <DependentUpon>GoodsIssue.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\GoodsReceipt.aspx.designer.vb">
+      <DependentUpon>GoodsReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\GoodsReceipt.aspx.vb">
+      <DependentUpon>GoodsReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\ItmCategoryMaster.aspx.designer.vb">
+      <DependentUpon>ItmCategoryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\ItmCategoryMaster.aspx.vb">
+      <DependentUpon>ItmCategoryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\LoadImage.aspx.designer.vb">
+      <DependentUpon>LoadImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\LoadImage.aspx.vb">
+      <DependentUpon>LoadImage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\LocMaster.aspx.designer.vb">
+      <DependentUpon>LocMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\LocMaster.aspx.vb">
+      <DependentUpon>LocMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\SkuMaster.aspx.designer.vb">
+      <DependentUpon>SkuMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\SkuMaster.aspx.vb">
+      <DependentUpon>SkuMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\StockMovementByBatchReport.aspx.designer.vb">
+      <DependentUpon>StockMovementByBatchReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\StockMovementByBatchReport.aspx.vb">
+      <DependentUpon>StockMovementByBatchReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\StockMovementReport.aspx.designer.vb">
+      <DependentUpon>StockMovementReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\StockMovementReport.aspx.vb">
+      <DependentUpon>StockMovementReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\StockMovementSummaryByBatchReport.aspx.designer.vb">
+      <DependentUpon>StockMovementSummaryByBatchReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\StockMovementSummaryByBatchReport.aspx.vb">
+      <DependentUpon>StockMovementSummaryByBatchReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\StockMovementSummaryReport.aspx.designer.vb">
+      <DependentUpon>StockMovementSummaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\StockMovementSummaryReport.aspx.vb">
+      <DependentUpon>StockMovementSummaryReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Business\SupMaster.aspx.designer.vb">
+      <DependentUpon>SupMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\SupMaster.aspx.vb">
+      <DependentUpon>SupMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebServices\Wss.asmx.vb">
+      <DependentUpon>Wss.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Business\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\Profile1.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebServices\Web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Reports\Web.config" />
+    <Content Include="RptFiles\Web.config" />
+    <Content Include="RptFiles\stockMovementRpt_org.rpt" />
+    <Content Include="RptFiles\stockSummaryRpt_org.rpt" />
+    <Content Include="RptFiles\stockMovementRpt.rpt" />
+    <Content Include="RptFiles\ItemBalance.rpt" />
+    <Content Include="Uploadedfiles\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RptFiles\ItemBalanceBatch.rpt" />
+    <Content Include="RptFiles\stockMovementBatch.rpt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54845</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
