@@ -114,6 +114,12 @@ Public Class SupMaster
         End Try
     End Sub
 
+    Protected Sub OnPageIndexChanging(sender As Object, e As GridViewPageEventArgs)
+        SupplierMasterListGrid.PageIndex = e.NewPageIndex
+        LoadData()
+    End Sub
+
+
 #End Region
 #Region "Form Related functions"
 

@@ -152,6 +152,13 @@ Public Class SkuMaster
         End Try
     End Sub
 
+    Protected Sub OnPageIndexChanging(sender As Object, e As GridViewPageEventArgs)
+        ItemMasterListGrid.PageIndex = e.NewPageIndex
+        LoadData()
+    End Sub
+
+
+
 #End Region
 #Region "Form Related functions"
     Protected Sub BindItemCategory()

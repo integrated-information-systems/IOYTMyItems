@@ -67,7 +67,8 @@
              EmptyDataText="No Record found"
              CssClass="ItemGrid"     
              PageSize="20"
-             DataKeyNames="Idkey"             
+             DataKeyNames="Idkey"   
+              OnPageIndexChanging="OnPageIndexChanging"
              >
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" HorizontalAlign="Left" />
